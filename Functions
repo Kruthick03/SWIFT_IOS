@@ -1,0 +1,6 @@
+func add(name: String,age: Int){
+    print("Name : \(name)")
+    print("Age : \(age)")
+}
+
+add(name: "Kruthick",age: 21)
