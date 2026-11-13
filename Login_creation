@@ -1,0 +1,10 @@
+import Foundation
+let username = "user"
+let pass = "12345"
+if username == "user" && pass == "12345"{
+    print("LOGIN SUCCESFULL")
+}
+else{
+    print("YOUR ARE NOT ALLOWED TO LOGIN")
+}
+
