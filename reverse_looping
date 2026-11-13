@@ -1,0 +1,5 @@
+
+for i in stride(from: 50, through: 40, by: -2) {
+    print(i)
+}
+	
