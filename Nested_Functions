@@ -1,0 +1,14 @@
+func result(){
+    func addtot(a : Int,b : Int, c : Int) ->Int{
+        return a+b+c
+    }
+    func avg(tot : Int) -> Double{
+        return Double(tot)/3.0
+    }
+    var tot = addtot(10,20,30)
+    var average = avg(tot)
+    
+    print(tot)
+    print(average)
+}
+result()
