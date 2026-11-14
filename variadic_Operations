@@ -1,0 +1,13 @@
+func add(numbers: Int...) -> Int {
+    var total = 0
+
+    for number in numbers {
+        total += number
+    }
+
+    return total
+}
+
+print(add(numbers: 10, 20))
+print(add(numbers: 10, 20, 30))
+print(add(numbers: 10, 20, 30, 40))
