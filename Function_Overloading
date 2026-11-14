@@ -1,0 +1,9 @@
+func display(a : Int,b : Int) ->Int{
+    return a+b
+}
+func display(a : Int,b : Int,c : Int) ->Int{
+    return a+b+c
+}
+
+print(display(a : 10,b : 20))
+print(display(a : 10,b : 20, c : 30))
