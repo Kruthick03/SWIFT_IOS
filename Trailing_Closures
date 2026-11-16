@@ -1,0 +1,4 @@
+let res : (Int,Int) -> Int = {
+    return $0+$1
+}
+print(res(10,20))
