@@ -1,0 +1,8 @@
+func process( action : () -> ()) {
+    print("Start")
+    action()
+    print("end")
+}
+process{
+    print("execute")
+}
