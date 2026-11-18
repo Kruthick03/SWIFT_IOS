@@ -1,0 +1,12 @@
+class employee{
+    var name = "Kruthick"
+}
+var emp : employee? = employee()
+weak var empw = emp
+emp = nil
+if empw ==  nil{
+    print("YES")
+}
+else{
+    print("NO")
+}
