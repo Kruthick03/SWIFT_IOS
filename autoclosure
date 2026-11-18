@@ -1,0 +1,8 @@
+func calculate(value: @autoclosure () -> Int) {
+    print("A")
+    print("B")
+    print(value())
+    print("C")
+}
+
+calculate(value: 5 + 10)
