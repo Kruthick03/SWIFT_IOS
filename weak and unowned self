@@ -1,0 +1,15 @@
+class Student {
+    var name = "Arun"
+
+    lazy var action = { [unowned self] in
+        print(self.name)
+    }
+}
+
+var student: Student? = Student()
+
+let saved = student!.action
+
+student = nil
+
+saved()
