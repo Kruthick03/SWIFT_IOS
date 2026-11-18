@@ -1,0 +1,15 @@
+var savedAction: (() -> Void)?
+
+func process(action: @escaping () -> Void) {
+    print("Start")
+
+    savedAction = action
+
+    print("End")
+}
+
+process {
+    print("Hello")
+}
+
+savedAction?()
