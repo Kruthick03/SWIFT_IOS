@@ -1,0 +1,21 @@
+protocol Animal {
+    func sound()
+}
+
+struct Dog: Animal {
+    func sound() {
+        print("Bark")
+    }
+}
+
+struct Cat: Animal {
+    func sound() {
+        print("Meow")
+    }
+}
+
+let dog = Dog()
+let cat = Cat()
+
+dog.sound()
+cat.sound()
