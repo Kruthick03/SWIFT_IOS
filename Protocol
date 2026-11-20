@@ -1,0 +1,22 @@
+protocol Vehicle {
+    var brand: String { get }
+    func start()
+    func stop()
+}
+
+struct Car: Vehicle {
+    let brand = "BMW"
+
+    func start() {
+        print("Car started")
+    }
+
+    func stop() {
+        print("Car stopped")
+    }
+}
+
+let car = Car()
+
+car.start()
+car.stop()
