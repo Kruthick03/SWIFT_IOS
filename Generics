@@ -1,0 +1,19 @@
+struct Product: Comparable {
+    let name: String
+    let price: Int
+
+    static func < (lhs: Product, rhs: Product) -> Bool {
+        return lhs.price < rhs.price
+    }
+}
+
+func findMaximum<T: Comparable>(_ first: T, _ second: T) -> T {
+    return first > second ? first : second
+}
+
+let phone = Product(name: "iPhone", price: 80000)
+let laptop = Product(name: "MacBook", price: 120000)
+
+let expensive = findMaximum(phone, laptop)
+
+print(expensive.name)
