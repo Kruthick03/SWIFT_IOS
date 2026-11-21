@@ -1,0 +1,17 @@
+enum LoginError: Error {
+    case invalidPassword
+}
+
+func login(password: String) throws {
+    if password != "Swift123" {
+        throw LoginError.invalidPassword
+    }
+
+    print("Login successful")
+}
+
+do {
+    try login(password: "wrong123")
+} catch {
+    print("Login failed")
+}
