@@ -1,0 +1,17 @@
+protocol Vehicle {
+    func start()
+}
+
+protocol ElectricVehicle: Vehicle {
+    func charge()
+}
+
+struct Tesla: ElectricVehicle {
+    func start() {
+        print("Vehicle started")
+    }
+
+    func charge() {
+        print("Battery charging")
+    }
+}
