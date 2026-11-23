@@ -1,0 +1,23 @@
+protocol Payment {
+    func pay()
+}
+
+extension Payment {
+    func pay() {
+        print("Default payment")
+    }
+}
+
+struct UPI: Payment {
+    func pay() {
+        print("UPI payment")
+    }
+}
+
+struct Card: Payment { }
+
+let upi = UPI()
+let card = Card()
+
+upi.pay()
+card.pay()
