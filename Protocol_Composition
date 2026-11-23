@@ -1,0 +1,21 @@
+protocol Camera {
+    func takePhoto()
+}
+protocol GPS {
+    func getLocation()
+}
+func useDevice(device: Camera & GPS) {
+    device.takePhoto()
+    device.getLocation()
+}
+struct Smartphone: Camera, GPS {
+    func takePhoto() {
+        print("Photo captured")
+    }
+
+    func getLocation() {
+        print("Location detected")
+    }
+}
+let phone = Smartphone()
+useDevice(device: phone)
